@@ -25,9 +25,13 @@ function createButton(icon) {
   return button;
 }
 
-function createTask(texto) {
+function createTask(texto, completed = false) {
   const newItem = document.createElement("li");
-  const itemText = document.createTextNode(texto);
+
+  const itemText = document.createElement("span");
+  itemText.textContent = texto;
+
+  if (completed) itemText.classList.add("completed");
 
   const buttonGroup = document.createElement("div");
   buttonGroup.classList.add("button-group");
@@ -49,7 +53,7 @@ function createTask(texto) {
   });
 
   doneTask.addEventListener("click", () => {
-    newItem.classList.toggle("completed");
+    itemText.classList.toggle("completed");
     saveTasks();
   });
 
