@@ -1,4 +1,5 @@
 # 📋 Lista de Tarefas
+<a href="https://gustavormendes.github.io/lista-de-tarefas/" target="_blank" rel="noopener noreferrer"><img src="img/Screenshot-lista-de-tarefas.png" alt="Screenshot da Lista de Tarefas" width="700"></a>
 
 ## ✨ Descrição do Projeto
 
